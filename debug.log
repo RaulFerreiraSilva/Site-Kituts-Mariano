@@ -1,0 +1,3 @@
+[1206/104741.993:ERROR:registration_protocol_win.cc(102)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1206/104742.519:ERROR:crashpad_client_win.cc(808)] not connected
+[1206/104742.902:ERROR:registration_protocol_win.cc(102)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)

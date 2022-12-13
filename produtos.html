@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Link do arquivo em CSS-->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Link com o icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="icon" href="./img/logo bolo.png" />
+  <title>Produtos</title>
+</head>
+
+<body>
+  <!--Começo da section header-->
+
+  <header>
+    <a href="#" class="logo">
+      <img src="./img/logo escrito novo.png" alt="" /></a>
+
+    <nav class="navbar">
+      <a class="active" href="./index.html">home</a>
+      <a href="#category">categoria</a>
+      <a href="#menu">produtos</a>
+      <a href="#featured">destaque</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+      <a href="#" class="fa fa-user" aria-hidden="true"></a>
+    </div>
+    <!--Carrinho-->
+    <div class="cart">
+      <h1 class="heading"> Carrinho </h1>
+      <!--Conteudo-->
+      <div class="cart-content">
+
+      </div>
+      <!--total-->
+      <div class="total">
+        <div class="total-title">Total:</div>
+        <div class="total-price">R$0</div>
+      </div>
+      <!--Botao Finalizar-->
+      <button type="button" class="btn-buy pay">Finalizar compra</button>
+      <!-- botao fechar carrinho-->
+      <i class="fi fi-sr-x" id="close-cart"></i>
+
+    </div>
+  </header>
+  <!--fim section header-->
+
+  <!--Começo da section Shop-->
+  <section class="shop container" id="shop">
+
+    <h1 class="heading"> Categoria </h1>
+
+    <ul class="controls">
+      <li class="btn button-active" data-filter="all"> <img src="./img/todos icone.png" alt=""> Todos</li>
+      <li class="btn" data-filter="bolo"> <img src="./img/bolos.png" alt=""> Bolos</li>
+      <li class="btn" data-filter="brigadeiro"> <img src="./img/brigadeiros.png" alt=""> Brigadeiros</li>
+      <li class="btn" data-filter="torta"> <img src="./img/tortas.png" alt="">Tortas</li>
+
+    </ul>
+
+    <h1 class="section-title heading">Produtos</h1>
+    <!--conteudo-->
+    <div class="shop-content">
+      <!--box 1-->
+      <div class="product-box bolo">
+        <img src="./img/Caseiro/caseiro-cenoura.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Caseiro de Cenoura</h3>
+        <p class="product-desc">
+          Bolo caseiro de cenoura com a massa fofinha.
+        </p>
+        <span class="price">R$20.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 2-->
+      <div class="product-box bolo">
+        <img src="./img/Caseiro/caseiro-chocolate.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Caseiro de Chocolate</h3>
+        <p class="product-desc">
+          Bolo caseiro de chocolate com a massa fofinha.
+        </p>
+        <span class="price">R$20.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 3-->
+      <div class="product-box bolo">
+        <img src="./img/Caseiro/caseiro-fuba.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Caseiro de Fubá</h3>
+        <p class="product-desc">
+          Bolo caseiro de fubá com a massa fofinha.
+        </p>
+        <span class="price">R$20.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 4-->
+      <div class="product-box bolo">
+        <img src="./img/Caseiro/caseiro-laranja.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Caseiro de Laranja</h3>
+        <p class="product-desc">
+          Bolo caseiro de laranja com a massa fofinha.
+        </p>
+        <span class="price">R$20.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 5-->
+      <div class="product-box bolo">
+        <img src="./img/Caseiro/caseiro-limao.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Caseiro de Limão</h3>
+        <p class="product-desc">
+          Bolo caseiro de limão com a massa fofinha.
+        </p>
+        <span class="price">R$20.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 6-->
+      <div class="product-box bolo">
+        <img src="./img/Vulcao (1)/vulcao-brigadeiro.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Vulcão de Brigadeiro</h3>
+        <p class="product-desc">
+          Bolo caseiro de chocolate com a massa fofinha e cobertura de brigadeiro.
+        </p>
+        <span class="price">R$30.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 7-->
+      <div class="product-box bolo">
+        <img src="./img/Vulcao (1)/vulcao-cenoura.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Vulcão de Cenoura</h3>
+        <p class="product-desc">
+          Bolo cenoura de chocolate com a massa fofinha e cobertura de brigadeiro.
+        </p>
+        <span class="price">R$30.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 8-->
+      <div class="product-box bolo">
+        <img src="./img/Vulcao (1)/vulcao-ninho.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Vulcão de Ninho</h3>
+        <p class="product-desc">
+          Bolo caseiro de baunilha com a massa fofinha e cobertura de creme de ninho
+        </p>
+        <span class="price">R$30.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 9-->
+      <div class="product-box bolo">
+        <img src="./img/Vulcao (1)/vulcao-ninho.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Vulcão de Ninho com Nutella</h3>
+        <p class="product-desc">
+          Bolo caseiro de baunilha com a massa fofinha e cobertura de creme de ninho e nutella
+        </p>
+        <span class="price">R$30.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 10-->
+      <div class="product-box bolo">
+        <img src="./img/Vulcao (1)/vulcao-redvelvet.png" alt="" class="product-img">
+        <h3 class="product-title">Bolo Vulcão de Red Velvet</h3>
+        <p class="product-desc">
+          Bolo caseiro de baunilha com a massa fofinha e cobertura de mousse de cream cheese
+        </p>
+        <span class="price">R$30.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 11-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/beijinho.png" alt="" class="product-img">
+        <h3 class="product-title">Beijinho</h3>
+        <p class="product-desc">
+          Brigadeiro branco com coco
+        </p>
+        <span class="price">R$3.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 12-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/bicho.png" alt="" class="product-img">
+        <h3 class="product-title">Bicho de Pé</h3>
+        <p class="product-desc">
+          Brigadeiro de nesquik com açúcar cristal
+        </p>
+        <span class="price">R$3.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 13-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/bicho.png" alt="" class="product-img">
+        <h3 class="product-title">Brigadeiro com Nutella</h3>
+        <p class="product-desc">
+          Brigadeiro tradicional com cobertura de nutella
+        </p>
+        <span class="price">R$3.50</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 14-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/~Brigadeiro MA.png" alt="" class="product-img">
+        <h3 class="product-title">Brigadeiro Meio Amargo</h3>
+        <p class="product-desc">
+          Brigadeiro meio amargo com granulado
+        </p>
+        <span class="price">R$3.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 15-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/brigadeiros.png" alt="" class="product-img">
+        <h3 class="product-title">Brigadeiro Tradicional</h3>
+        <p class="product-desc">
+          Brigadeiro tradicional com granulado
+        </p>
+        <span class="price">R$3.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 16-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/churros.png" alt="" class="product-img">
+        <h3 class="product-title">Churros</h3>
+        <p class="product-desc">
+          Brigadeiro branco com cobertura de doce de leite e canela
+        </p>
+        <span class="price">R$3.50</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 17-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/churros.png" alt="" class="product-img">
+        <h3 class="product-title">Ferrero</h3>
+        <p class="product-desc">
+          Brigadeiro tradicional com cobertura de nutella e castanha
+        </p>
+        <span class="price">R$3.50</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 18-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/ninho.png" alt="" class="product-img">
+        <h3 class="product-title">Ninho</h3>
+        <p class="product-desc">
+          Brigadeiro de ninho e leite em pó
+        </p>
+        <span class="price">R$3.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 19-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/ninhonutella.png" alt="" class="product-img">
+        <h3 class="product-title">Ninho com Nutella</h3>
+        <p class="product-desc">
+          Brigadeiro de ninho com cobertura de nutella
+        </p>
+        <span class="price">R$3.50</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 20-->
+      <div class="product-box brigadeiro">
+        <img src="./img/brigadeiros/ninhonutella.png" alt="" class="product-img">
+        <h3 class="product-title">Oreo</h3>
+        <p class="product-desc">
+          Brigadeiro de ninho com pedaços de bolacha oreo
+        </p>
+        <span class="price">R$3.50</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 21-->
+      <div class="product-box torta">
+        <img src="./img/brigadeiros/ninhonutella.png" alt="" class="product-img">
+        <h3 class="product-title">Torta Banoffee</h3>
+        <p class="product-desc">
+          Torta de banana com doce de leite, chantilly e canela
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 22-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-carneseca.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Carne Seca</h3>
+        <p class="product-desc">
+          Torta recheada com carne seca refogada
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 23-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-carneseca.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Creme com Morango</h3>
+        <p class="product-desc">
+          Torta recheada com creme de confeiteiro e morango
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 24-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-frango.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Torta de Frango</h3>
+        <p class="product-desc">
+          Torta recheada com creme de frango desfiado
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 25-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-frangocatupiry.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Frango com Catupiry</h3>
+        <p class="product-desc">
+          Torta recheada com creme de frango desfiado e catupiry
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 26-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-frangocatupiry.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Limão</h3>
+        <p class="product-desc">
+          Torta recheada com mousse de limão
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 27-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-frangocatupiry.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Maçã</h3>
+        <p class="product-desc">
+          Torta recheada com creme de confeiteiro e maçã
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 28-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-frangocatupiry.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Ninho com Nutella</h3>
+        <p class="product-desc">
+          Torta recheada com creme de ninho e nutella
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 28-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-palmito.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Palmito</h3>
+        <p class="product-desc">
+          Torta recheada com creme de palmito
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+
+      <!--box 29-->
+      <div class="product-box torta">
+        <img src="./img/Salgada (1)/salgada-ricota.png" alt="" class="product-img">
+        <h3 class="product-title">Torta de Ricota com Brócolis</h3>
+        <p class="product-desc">
+          Torta recheada com creme de ricota e brócolis
+        </p>
+        <span class="price">R$55.00</span>
+        <i class="fi fi-rr-shopping-bag-add add-cart"> Comprar</i>
+      </div>
+    </div>
+  </section>
+  <!--Fim da section Shop-->
+
+  <!--Começo da section feature -->
+  <section class="feature" id="featured">
+    <h1 class="heading"> Destaque </h1>
+
+    <div class="row">
+      <div class="image-container">
+        <div class="big-image">
+          <img src="./img/brigadeiros/brigadeiros.png" alt="" />
+        </div>
+
+        <div class="small-image">
+          <img class="image-active" src="./img/brigadeiros/brigadeiros.png" alt="" />
+          <img src="./img/destaque (1)/briga1.png" alt="" />
+          <img src="./img/destaque (1)/briga2.png" alt="" />
+          <img src="./img/destaque (1)/briga3.png" alt="" />
+        </div>
+      </div>
+
+      <div class="content">
+        <h3>Brigadeiro Tradicional</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <strong class="price">R$ 3,00 </strong>
+      </div>
+    </div>
+  </section>
+  <!--Fim da section feature -->
+
+  <!--Começo do footer -->
+  <section class="footer" id="footer">
+    <div class="box-container">
+      <div class="box">
+        <a href="#" class="logo">
+          <img src="./img/Logo Kitut's Mariano (Apresentação (169)) 2 (2).svg" alt="" class="logo" />
+        </a>
+        <p>© 2022 desenvolvido por Red Velvet.</p>
+      </div>
+
+      <div class="box">
+        <h3>Links Rápidos</h3>
+        <a href="#home">home</a>
+        <a href="#about">sobre</a>
+        <a href="#products">produtos</a>
+        <a href="#contact">contato</a>
+      </div>
+
+      <div class="box">
+        <h3>Newsletter</h3>
+        <div class="border"></div>
+        <p>Digite o seu email e fique por dentro das nossas novidades!</p>
+        <form action="" class="newsletter-form">
+          <input type="email" class="txtb" placeholder="Digite o seu email" />
+          <input type="submit" class="btn" value="inscrever" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--Fim do footer -->
+
+  <!--Começo do loader 
+    <div class="loader-container">
+      <img src="./img/loader.gif" alt="" />
+    </div>
+    Fim do loader -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- jquery cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- Link do arquivo em JS-->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
